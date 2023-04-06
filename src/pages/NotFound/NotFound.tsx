@@ -4,7 +4,11 @@ import classes from "./notFound.module.css"
 
 const NotFound = () => {
     return (
-        <div>NotFound</div>
+        <div className = {classes.body}>
+            <div className = {classes.container}>
+                
+            </div>
+        </div>
     )
 }
 

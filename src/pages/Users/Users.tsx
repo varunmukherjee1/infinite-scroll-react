@@ -4,7 +4,11 @@ import classes from "./users.module.css";
 
 const Users = () => {
     return (
-        <div>Users</div>
+        <div className = {classes.body}>
+            <div className = {classes.container}>
+                
+            </div>
+        </div>
     )
 }
 
