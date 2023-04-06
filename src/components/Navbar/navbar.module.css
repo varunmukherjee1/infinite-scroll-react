@@ -34,27 +34,28 @@
 
 .login {
     border: 3px solid var(--blue);
+    outline: none;
+    background-color: var(--black);
     border-radius: 5px;
     padding: 5px 15px;
     margin: 0.4rem 2rem;
     transition: all 0.2s;
-}
-
-.login p {
     font-size: 2.4rem;
     color: var(--white);
-    font-weight: 500;
-    transition: all 0.2s;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+    cursor: pointer;
 }
 
 .login:hover {
     /* background-color: var(--pink); */
     border-color: var(--white);
+    color: var(--green);
     /* border-width: 3px; */
     /* transform: scale(1.03); */
 }
 
 .login:hover p{
     /* color: var(--blue) */
-    color: var(--green);
 }
