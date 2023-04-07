@@ -1,6 +1,7 @@
 import React,{useEffect, useState, useRef} from 'react'
 import axios from "axios"
 
+import Navbar from '../../components/Navbar/Navbar';
 import User from '../../models/user';
 import UserCard from '../../components/UserCard/UserCard';
 
@@ -78,14 +79,17 @@ const Users = () => {
     },[])
 
     return (
-        <div className = {classes.body}>
-            <div className = {classes.container}>
-                {userData.map((val,idx) => (
-                    <UserCard key = {idx} userData = {val}/>
-                ))}
-                {loading &&  <p className = {classes.loading}>Loading ...</p>}
+        <>
+            <Navbar/>
+            <div className = {classes.body}>
+                <div className = {classes.container}>
+                    {userData.map((val,idx) => (
+                        <UserCard key = {idx} userData = {val}/>
+                    ))}
+                    {loading &&  <p className = {classes.loading}>Loading ...</p>}
+                </div>
             </div>
-        </div>
+        </>
     )
 }
 

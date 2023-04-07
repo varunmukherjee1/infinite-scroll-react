@@ -61,3 +61,33 @@
 .login:hover p{
     color: var(--black)
 }
+
+.logout {
+    border: 3px solid var(--blue);
+    outline: none;
+    background-color: var(--black);
+    border-radius: 5px;
+    padding: 5px 15px;
+    margin: 0.4rem 2rem;
+    transition: all 0.4s;
+    cursor: pointer;
+    font-size: 2.4rem;
+    color: var(--white);
+    font-weight: 600;
+}
+
+/* .login p {
+    transition: all 0.4s;
+    font-size: 2.4rem;
+    color: var(--white);
+    font-weight: 600;
+} */
+
+.logout:hover {
+    background-color: var(--white);
+    /* border-color: var(--white); */
+    color: var(--pink);
+    border-color: var(--pink);
+    /* border-width: 3px; */
+    /* transform: scale(1.03); */
+}

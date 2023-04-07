@@ -18,3 +18,33 @@
     align-items: center;
     justify-content: center;
 }
+
+.content {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 400px;
+    width: 95%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.heading {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.link {
+    font-size: 2.2rem;
+    color: var(--dark-blue);
+    /* text-align: center; */
+}
+
+.link a {
+    text-decoration: underline;
+}
