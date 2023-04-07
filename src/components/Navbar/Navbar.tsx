@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import classes from "./navbar.module.css"
 
-const Navbar: React.FC<{showModal: () => void}> = (props) => {
+const Navbar = () => {
     return (
         <div className = {classes.container}>
             <div className = {classes.nav}>
@@ -11,9 +11,9 @@ const Navbar: React.FC<{showModal: () => void}> = (props) => {
                     <p>Users</p>
                 </Link>
 
-                <button className = {classes.login} onClick = {props.showModal}>
-                    Login
-                </button>
+                <Link to = "/login" className = {classes.login}>
+                    <p>Login</p>
+                </Link>
             </div>
         </div>
     )

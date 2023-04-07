@@ -3,8 +3,8 @@
     justify-content: center;
     z-index: 10;
     background-color: var(--black);
-    /* position: fixed; */
-    position: absolute;
+    position: fixed;
+    /* position: absolute; */
     top: 0;
     width: 100%;
     padding: 8px;
@@ -39,23 +39,25 @@
     border-radius: 5px;
     padding: 5px 15px;
     margin: 0.4rem 2rem;
-    transition: all 0.2s;
-    font-size: 2.4rem;
-    color: var(--white);
-    font-weight: 600;
-    letter-spacing: 1px;
-    transition: all 0.3s;
+    transition: all 0.4s;
     cursor: pointer;
 }
 
+.login p {
+    transition: all 0.4s;
+    font-size: 2.4rem;
+    color: var(--white);
+    font-weight: 600;
+}
+
 .login:hover {
-    /* background-color: var(--pink); */
-    border-color: var(--white);
-    color: var(--green);
+    background-color: var(--white);
+    /* border-color: var(--white); */
+    /* color: var(--black); */
     /* border-width: 3px; */
     /* transform: scale(1.03); */
 }
 
 .login:hover p{
-    /* color: var(--blue) */
+    color: var(--black)
 }
